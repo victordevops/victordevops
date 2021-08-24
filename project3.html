@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Project</title>
+
+	</head>
+	<body background="background_1.jpg">
+
+		<script type="text/javascript">
+
+			alert("Bem-vindo!");
+
+			function fonteTitulo() {
+
+				document.write("<font face='Arial' size='6px'>");
+
+				}
+
+			function fonteGeral() {
+
+				document.write("<font face='Arial' size='4px'>");
+
+				}
+
+			function pularLinha() {
+
+				document.write("<br>");
+
+				}
+
+			function titulo(string) {
+
+				document.write("<center><h1>"+string+"</center></h1>");
+
+				}
+
+			function exibir(string) {
+
+				document.write(string);
+				pularLinha();
+
+				}
+
+			function inputBasico(string) {
+
+				document.write("<hr>"+string+"<input></input>");
+				pularLinha();
+
+				}
+
+			fonteTitulo();
+			titulo("Project");
+			fonteGeral();
+			exibir("<hr>Utilizando funções para dinamizar a construção de páginas.");
+			exibir("Utilizando HTML para redirecionar para outras <a href=https://www.twitter.com/tang_lcl/>páginas</a>.");
+
+			var idadeUm = (30);
+			var idadeDois = (49);
+			var idadeTres = (17);
+			var media = ((idadeUm+idadeDois+idadeTres)/5);
+
+			exibir("Usando concatenações e tipo Math para, respectivamente, unir strings e variáveis e arredondar números.");
+			exibir("<hr>Sua média é: "+Math.round(media));
+			inputBasico("Inserção de informações básica: ");
+
+		</script>
+
+	</body>
+<html>
