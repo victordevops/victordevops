@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>IMC Calculator</title>
+	</head>
+	<body background="KQlOtj.jpg">
+		<script type="text/javascript">
+
+			function fonteTitulo() {
+
+				document.write("<font face='Arial' size='6px'>");
+
+			}
+
+			function fonteGeral() {
+
+				document.write("<font face='Arial' size='7px'>");
+
+			}
+
+			function pularLinha() {
+
+				document.write("<br>");
+			}
+
+			function titulo(string) {
+
+				fonteTitulo();
+				document.write("<center><h1>"+string+"</h1></center><hr>");
+			}
+			
+			function exibir(string) {
+
+				fonteGeral();
+				document.write(string);
+				pularLinha();
+			}
+
+			function calcularImc() {
+
+				var nome = prompt("Qual seu nome?");
+				var peso = prompt(nome+" qual o seu peso:");
+				var altura = prompt(nome+" qual a sua altura:");
+				var imc = peso/(altura*altura);
+				exibir("O IMC de "+nome+" é: "+Math.round(imc)+"kg/m^2"); 	
+			}
+
+			titulo("Calculadora de IMC");
+			calcularImc();
+
+		</script>
+	</body>
+</html>
