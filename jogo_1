@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jogo de Adivinhação</title>
+	</head>
+	<body background="bg.png">
+		<script type="text/javascript">
+			function pularLinha() {
+
+				document.write("<br>");
+			}
+
+			function fonteGeral() {
+
+				document.write("<font face='Arial' size='6px'>");
+			}
+
+			function titulo(string) {
+
+				document.write("<center><font face='Arial' size='5px'><h1>"+string+"</h1></font></center><hr>");
+			}
+
+			function exibir(string) {
+
+				fonteGeral();
+				pularLinha();
+				document.write(string);
+			}
+
+			titulo("Jogo de Adivinhação");
+			alert("Em que número de 1 a 10 estou pensando?");
+			var numero = Math.round(Math.random()*10);//Math.random() gera números aleatorios.
+			console.log(numero);//Mostra o valor no console do navegador.
+			var chute = parseInt(prompt("Qual seu chute?"));//parseInt transforma os valores númericos colocados na string em type=number, mas não pode transformar caracteres em números.
+			if (chute==numero) {
+
+				exibir("Parabéns, eu estava pensando no número "+numero+"!");
+			}
+
+			if (chute!=numero) {
+
+				exibir("Você errou o número pensado foi "+numero+"!")
+			}
+		</script>
+	</body>
+</html>
