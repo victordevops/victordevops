@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tabuada</title>
+	</head>
+	<body background="bg.jpg">
+		<script type="text/javascript">
+
+			function fonteGeral() {
+
+				document.write("<font face='Arial' size='6px'>");
+			}
+
+			function fonteTitulo() {
+
+				document.write("<font face='Arial' size='6px'>");
+			}
+
+			function titulo(string) {
+
+				fonteTitulo();
+				document.write("<center><h1>"+string+"</h1></center><hr>");
+			}
+
+			function pularLinha() {
+
+				document.write("<br>");
+			}
+
+			function exibir(string) {
+
+				fonteGeral();
+				pularLinha();
+				document.write(string);
+			}
+
+			titulo("Tabuada");
+
+			for(var multiplicador=1;multiplicador<=10;multiplicador++) { //A estrutura do for() possui a mesma funcionalidade do while(), com a diferença de que ela é divida em três partes. A primeira é uma variável para inicializá-lo, a que será incrementada, o segundo contém a condição de repetição, a última parte do for() é o incremento da variável
+
+				exibir(9*multiplicador);
+			}
+
+		</script>
+	</body>
+</html>
